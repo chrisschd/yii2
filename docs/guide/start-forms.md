@@ -113,7 +113,7 @@ class SiteController extends Controller
 }
 ```
 
-The action first creates an `EntryForm` object. It then tries to populate the model
+The action first creates an `EntryForm` object. (Note: You have to inserte "use app\models\EntryForm" at top) It then tries to populate the model
 with the data from `$_POST`, provided in Yii by [[yii\web\Request::post()]].
 If the model is successfully populated (i.e., if the user has submitted the HTML form), the action will call
 [[yii\base\Model::validate()|validate()]] to make sure the values entered are valid.
